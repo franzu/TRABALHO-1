@@ -34,9 +34,9 @@ void pair(int v[],int n){
 			k=i;
 		}	
 	} 
-	printf("os pares de elementos mais proximos sao:%d  %d\n",v[k],v[k+1]);
+	printf("Os pares de elementos mais proximos sao:\n%d %d\n",v[k],v[k+1]);
 	for(i=k+1;i<n-1;i++){
-		if(v[i+1]-v[i]==delta)printf("%d  %d\n",v[i],v[i+1]);
+		if(v[i+1]-v[i]==delta)printf("%d %d\n",v[i],v[i+1]);
 }
 }
 
@@ -46,11 +46,11 @@ void main(){
 	int *pv;
 	pv = (int *) calloc(100, sizeof (int));
 	v[0]=*pv;
-	printf("numero de elementos inteiros do vetor(entre 0 e 100):");
+	printf("Iremos calcular o par de inteiros mais proximo.Numero de elementos inteiros do vetor(entre 2 e 100):");
 	scanf("%d",&n);//LE O NUMERO DE ELEMENTOS DO VETOR
 	if(n==0||n==1)return;
 	else{
-	printf("digite os inteiros:");
+	printf("Digite os inteiros:");
 	for(i=0;i<n;i++){
 		scanf("%d",&v[i]);//LE TODOS OS N ELEMENTOS
 	}

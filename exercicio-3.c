@@ -58,11 +58,11 @@ void main(){
 	int *pv;
 	pv = (int *) calloc(100, sizeof (int));
 	v[0]=*pv;
-	printf("numero de elementos inteiros do vetor(entre 0 e 100):");
+	printf("Vamos calcular os elementos que voce digitar mais.Numero de elementos inteiros do vetor(entre 2 e 100):");
 	scanf("%d",&n);//LE O NUMERO DE ELEMENTOS DO VETOR
 	if(n==0||n==1)return;
 	else{
-	printf("digite os inteiros:");
+	printf("Digite os inteiros:");
 	for(i=0;i<n;i++){
 		scanf("%d",&v[i]);//LE TODOS OS N ELEMENTOS
 	}

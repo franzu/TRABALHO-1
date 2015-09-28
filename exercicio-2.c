@@ -40,11 +40,12 @@ void main(){
 	int *pv;
 	pv = (int *) calloc(100, sizeof (int));
 	v[0]=*pv;
-	printf("numero de elementos inteiros do vetor(entre 0 e 100):");
+	printf("Este programa calcula os numeros que aparecem uma vez soh.Numero de elementos inteiros do vetor(entre 0 e 100):");
 	scanf("%d",&n);//LE O NUMERO DE ELEMENTOS DO VETOR
-	if(n==0||n==1)return;
+	if(n==0){printf("Nenhum elemento sera digitado, tchau!");
+	return;}
 	else{
-	printf("digite os inteiros:");
+	printf("Digite os inteiros:");
 	for(i=0;i<n;i++){
 		scanf("%d",&v[i]);//LE TODOS OS N ELEMENTOS
 	}
@@ -53,7 +54,7 @@ void main(){
 	printf("%d\n",v[j]);//MOSTRA O VETOR ORDENADO
 	j++;
 	} 
-	printf("os elementos que ocorrem uma unica vez sao:\n");
+	printf("Os elementos que ocorrem uma unica vez sao:\n");
 	for(j=0;j<n;j++){
 		unit(j,v);//MOSTRA O VETOR DE ELEMENTOS UNICOS
 	}
